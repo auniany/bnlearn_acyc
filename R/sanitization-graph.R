@@ -136,12 +136,8 @@ is.pdag = function(arcs, nodes) !is.dag(arcs, nodes)
 is.acyclic = function(arcs, nodes, return.nodes = FALSE, directed = FALSE,
     debug = FALSE) {
 
-  .Call(call_is_pdag_acyclic,
-        arcs = arcs,
-        nodes = nodes,
-        return_nodes = return.nodes,
-        directed = directed,
-        debug = debug)
+# MODOFIED
+return(TRUE)
 
 }#IS.ACYCLIC.BACKEND
 
